@@ -8,7 +8,7 @@ RSpec.describe "StaticPages", type: :feature do
   describe "GET /home" do
     it "has the correct title" do
       visit static_pages_home_url
-      expect(page).to have_title("Home | #{@base_title}")
+      expect(page).to have_title(@base_title)
     end
   end
 
