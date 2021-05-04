@@ -91,4 +91,9 @@ RSpec.configure do |config|
   #   # test failures related to randomization by passing the same `--seed` value
   #   # as the one that triggered the failure.
   #   Kernel.srand config.seed
+  #   Use color not only in STDOUT but also in pagers and files
+  config.tty = true
+
+  #   Use the specified formatter
+  config.formatter = :documentation
 end

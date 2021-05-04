@@ -8,23 +8,23 @@ RSpec.describe "StaticPages", type: :request do
     end
   end
 
-  describe "GET /home" do
-    it "returns http success" do
-      get static_pages_home_url
-      expect(response).to have_http_status(:success)
-    end
-  end
-
   describe "GET /help" do
     it "returns http success" do
-      get static_pages_help_url
+      get help_path
       expect(response).to have_http_status(:success)
     end
   end
 
   describe "GET /about" do
     it "returns http success" do
-      get static_pages_about_url
+      get about_path
+      expect(response).to have_http_status(:success)
+    end
+  end
+
+  describe "GET /contact" do
+    it "returns http success" do
+      get contact_path
       expect(response).to have_http_status(:success)
     end
   end
